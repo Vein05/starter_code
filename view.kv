@@ -15,6 +15,16 @@
     Label:
         text: root.tip_output
 
+    Label:
+        text: 'Enter number of people: '
+
+    TextInput:
+        hint_text: "Number of People"
+        on_text: root.num_people_input = self.text
+    
+    Label:
+        text: root.split_output
+
     Button:
         text: 'Calculate 15% Tip'
         on_release: root.btn_click_calc_tip(15)
